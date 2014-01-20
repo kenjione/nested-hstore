@@ -13,7 +13,7 @@ module ActiveRecord
       end
 
       def from_hstore hstore
-        @nested_serializer.deserialize(super)
+        @nested_serializer.deserialize(hstore)
       end
     end
   end
